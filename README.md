@@ -1,3 +1,5 @@
+# DEEP DIVE - Build a Porfolio using Gatsby and Netlify CMS
+
 # What is Gatsby? https://www.gatsbyjs.com/docs/
 
 Gatsby.js is a meta-framework built on top of React, specializing in producing fully interactive and fast-loading
@@ -39,7 +41,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
   
  Gatsby plugins are Node.js packages that you can add to your site. Plugins let you quickly add new features to your Gatsby site without needing to build them from scratch. There are a ton of Gatsby plugins that allow you to source data from different places (i.e CMSs, Markdown, spreadsheets, etc.)
 
-5) Register Netlify CMS Plugin (`gatsby-plugin-netlify-cms`) in `gatsby-config.js`
+5) Register Netlify CMS Plugin in `/gatsby-config.js`
 
 ```
 // gatsby-config.js
@@ -49,6 +51,27 @@ module.exports = {
 }
 ```
 
-6) Configure Netlify CMS  `/static/admin/config.yml`
+6) Configure Netlify CMS and create our data model `/static/admin/config.yml`
 
-7) Use GraphQL to get data from Netlify CMS
+```
+// static/admin/config.yml
+
+backend:
+  name: gatsby-netlify-cms-portfolio
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+
+```
+
+7) Use GraphQL to display data on the front-end
+   Use static query: https://www.gatsbyjs.com/docs/how-to/querying-data/static-query/
