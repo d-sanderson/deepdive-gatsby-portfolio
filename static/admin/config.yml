@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   repo: d-sanderson/deepdive-gatsby-portfolio
+  branch: begin
 media_folder: static/assets
 public_folder: /assets
 

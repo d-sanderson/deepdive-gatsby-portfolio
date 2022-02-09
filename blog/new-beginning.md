@@ -1,7 +1,7 @@
 ---
-title: New Beginnings
+path: /new-beginnings
 date: "2015-05-28T22:40:32.169Z"
-description: This is an optional description for SEO and Open Graph purposes, rather than the default generated excerpt.
+title: New Beginnings
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and
