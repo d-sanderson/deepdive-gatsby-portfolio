@@ -3,6 +3,7 @@ backend:
   repo: d-sanderson/deepdive-gatsby-portfolio
 media_folder: static/assets
 public_folder: /assets
+
 collections:
   - name: blog
     label: Blog
