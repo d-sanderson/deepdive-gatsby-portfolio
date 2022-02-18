@@ -107,3 +107,6 @@ module.exports = {
 
   c) use the code exporter in the top right, select Page Query
 
+7) (if we have time) Generate pages for individual blog posts
+
+8) homework do the same thing for the projects folder
