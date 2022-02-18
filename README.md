@@ -19,7 +19,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package.json (list of project dependencies)
     ├── src 
     |    └── pages (file-system based routing)
-    ├── gatsby-browser.js https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
+    ├── gatsby-browser.js  lets you respond to Gatsby-specific events within the browser: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
     ├── gatsby-config.js **runs during build** https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
     ├── gatsby-node.js **runs during build** https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
     ├── gatsby-ssr.js https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
